@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	background-color: rgba(60, 60, 60, .1);
+}
+#datapoints > rect {
+	transition: all 500ms linear, fill 200ms linear;
+}
+
+div#graph {
+	width: 600px;
+	height: 600px;
+
+	position: absolute;
+	top: calc(50% - 280px);
+	left: calc(50% - 300px);
+}
+div#graph svg {
+	text-align: center;
+	position: relative;
+	bottom: 0;
+}

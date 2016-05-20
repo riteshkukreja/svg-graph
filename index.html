@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SVG Graphs</title>
+	<link rel="stylesheet" type="text/css" href="Graph.css">
+
+	<script type="text/javascript" src="Graph.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var g = document.getElementsByTagName("g");
+
+			var graph = new Graph([100, 200, 9, 50, 456, 67, 999]);
+
+			g[1].appendChild(graph);
+		}
+	</script>
+	<body>
+
+		<div id="graph">
+			<svg width="600" height="600">
+				<g>
+					<line x1="0" y1="100" x2="0" y2="600" stroke-width="5" stroke="black" />
+					<line x1="0" y1="600" x2="600" y2="600" stroke-width="5" stroke="black" />
+				</g>
+				<g id="datapoints" />
+			</svg>
+		</div>
+	</body>
+	</html>
